@@ -49,18 +49,22 @@ React는 UI를 Interactive하게 만들어준다.
     오로지 바뀐부분만 생성이됨! 이것이 바로 리액트다!
     하지만 해당 1의 방식은 계속해서 render해주는걸 잊으면 안되기에 최고의 방법이 아니다!
     
-    const data = React.useState();를 생성 후 
-    console.log(data);
-    를 해보면 (2) [undefined,f]를 볼 수 있다.
-    #undefined : data
-    #f : data를 바꿀때 사용하는 함수
-    let counter = 0;
-        function countUp() {
-            counter = count + 1;
-        }
-    의 코드와
-    const data = React.useState(0);
-    는 같은 역할이다.
+    2.
+        const data = React.useState();를 생성 후 
+        console.log(data);
+        를 해보면 (2) [undefined,f]를 볼 수 있다.
+        #undefined : data
+        #f : data를 바꿀때 사용하는 함수
+        let counter = 0;
+            function countUp() {
+                counter = count + 1;
+            }
+        의 코드와
+        const data = React.useState(0);
+        는 같은 역할이다.
+        물론 결과는 같지만 우린 리액트를 사용하는 만큼 리액트의 룰을 지키면서 하는게 좋다.
+        변수를 컴포넌트에 연결하여 변수에 데이터를 담은(counter) 다음 -> 해당 변수에 담긴 값을 변경(setCounter)
+    
     
 
 

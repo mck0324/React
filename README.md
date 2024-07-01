@@ -64,6 +64,13 @@ React는 UI를 Interactive하게 만들어준다.
         는 같은 역할이다.
         물론 결과는 같지만 우린 리액트를 사용하는 만큼 리액트의 룰을 지키면서 하는게 좋다.
         변수를 컴포넌트에 연결하여 변수에 데이터를 담은(counter) 다음 -> 해당 변수에 담긴 값을 변경(setCounter)
+
+    setCounter(counter + 1);
+    setCounter((current) => current + 1);
+    에서 아래에 있는걸 사용하길 권장 => 예상치 못한 업데이트가 어디선가 일어났다해도,혼동을 주는걸 방지.
+    #State셋팅
+    1.setCounter(1);,setCounter("lalarar"); => 이렇게 원하는 값 넣어주기
+    2.setCounter((current) => current + 1); => 함수를 전달하기
     
     
 

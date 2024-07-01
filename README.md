@@ -16,6 +16,7 @@ React는 UI를 Interactive하게 만들어준다.
 
 리액트의 경우
  #리액트의 규칙 중 하나는 HTML을 페이지에 직접 작성하지 않는다.
+ #props안에 event listener를 등록할 수 있다.
 
 비교점
  -바닐라JS에선 HTML을 먼저 만들고,그걸 JS로 가져와서 HTML을 수정해주는식이면

@@ -27,24 +27,34 @@
         //     "Click me"
         // );
         //JSX사용해서 해보기
-        const Title = () => (<h3 id="title" onMouseEnter={ () => console.log("mouse Enter") }>"Hello I'm a span"</h3>);
-        const Button = () => (
-            <button 
-                style={{
-                    backgroundColor: "tomato",
-                }} 
-                onClick={() => console.log("Clicked")}
-            >
-                Click me
-            </button>
-        );
+        // const Title = () => (<h3 id="title" onMouseEnter={ () => console.log("mouse Enter") }>"Hello I'm a span"</h3>);
+        // const Button = () => (
+        //     <button 
+        //         style={{
+        //             backgroundColor: "tomato",
+        //         }} 
+        //         onClick={() => console.log("Clicked")}
+        //     >
+        //         Click me
+        //     </button>
+        // );
         // const container = React.createElement("div", null,[Title,Button]);
         // JSX
-        const Container = () => (<div>
-            <Title /> 
-            <Button />
+        //1
+        let counter = 0;
+        function countUp() {
+            counter = counter + 1;
+            render();
+        }
+        function render() {
+            ReactDOM.render(<Container />, root);
+        }
+        const Container = () => (
+            <div>
+                <h3>Total Clicks: {counter}</h3>
+                <button onClick={countUp}>Click me</button>
             </div>
         );
-        ReactDOM.render(<Container />, root);
+        render();
     </script>
 </html>

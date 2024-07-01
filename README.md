@@ -49,7 +49,18 @@ React는 UI를 Interactive하게 만들어준다.
     오로지 바뀐부분만 생성이됨! 이것이 바로 리액트다!
     하지만 해당 1의 방식은 계속해서 render해주는걸 잊으면 안되기에 최고의 방법이 아니다!
     
-    
+    const data = React.useState();를 생성 후 
+    console.log(data);
+    를 해보면 (2) [undefined,f]를 볼 수 있다.
+    #undefined : data
+    #f : data를 바꿀때 사용하는 함수
+    let counter = 0;
+        function countUp() {
+            counter = count + 1;
+        }
+    의 코드와
+    const data = React.useState(0);
+    는 같은 역할이다.
     
 
 

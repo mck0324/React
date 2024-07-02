@@ -72,6 +72,13 @@ React는 UI를 Interactive하게 만들어준다.
     1.setCounter(1);,setCounter("lalarar"); => 이렇게 원하는 값 넣어주기
     2.setCounter((current) => current + 1); => 함수를 전달하기
     
+    #Props: 일종의 방식이며 부모 컴포넌트로부터 자식 컴포넌트에 데이터를 보낼 수 있게 해주는 방법.
+    예를들어: <Btn banana="Save Change"/>가 있다면.
+    function Btn(props) {} 해당 컴포넌트에 props로 banana="Save Change"가 들어가는것.
+    Btn이 전달 받는 유일한 인자.
+    장점: 중복 코드를 피해서 만들 수 있다.
+    #컴포넌트란 function() 함수 일뿐. => 어떤 JSX를 리턴해주는것
+
     
 
 

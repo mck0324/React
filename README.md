@@ -81,6 +81,7 @@ React는 UI를 Interactive하게 만들어준다.
     1.<Btn text={value} changeValue={chagneValue}/>
     2.<Btn text="Confirm"/>
     해당 컴포넌트가 그려질때 상태가 변하는건 위에 1의 값인데 랜더링될때 2번도 같이 다시 랜더링이 되는데(어플리케이션이 느려지는 원인이 될 수 있음!) 이걸 원치 않는다면 -> props가 변경되지 않는 한에서 다시 다시 랜더링이 될지 결정할 수 있다. => React.Memo
+    
 
     #컴포넌트란 function() 함수 일뿐. => 어떤 JSX를 리턴해주는것
 

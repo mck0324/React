@@ -7,3 +7,6 @@ Css적용
 2. props를 통한 style={{}} 또는 css를 모듈화시켜 Button.module.css,App.module.css를 이용하여 className={style.title} 이런식으로 하는게 좋으!
 
 #create-react-app은 컴포넌트들이나 스타일들을 독립적이게 유지시켜준다!!!
+
+
+#component를 처음 딱 한번만 실행되고 다시는 실행되지 않도록 하는 방법을 만들어보자.

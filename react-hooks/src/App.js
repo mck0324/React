@@ -1,17 +1,25 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import { useState } from 'react';
 import './App.css';
+import Hook1 from './routes/useState';
+import Hook2 from "./routes/useInput";
 
 function App() {
-  const [item, setItem] = useState(1);
-  const incrementItem = () => setItem(item + 1);
-  const decreamentItem = () => setItem(item - 1);
   return (
-    <div className="App">
-      <h1>Hello {item}</h1>
-      <h2>Start</h2>
-      <button onClick={incrementItem} >Increment</button>
-      <button onClick={decreamentItem}>Decrement</button>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/hook1">
+          <Hook1 />
+        </Route>
+        <Route path="/hook2">
+          <Hook2 />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

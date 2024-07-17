@@ -10,3 +10,7 @@ Hooks를 사용함을써 코드 길이가 상당히 줄어듬!!
 
 #useInput
 다른 function에서 이벤트를 처리 할 수 있기문에 혁신적이다!
+
+
+#useTabs
+useState를 이용 => 가장핵심은 setState는 모든걸 새로고침해준다!!! => Re-render

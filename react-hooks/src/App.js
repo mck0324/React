@@ -7,6 +7,7 @@ import { useState } from 'react';
 import './App.css';
 import Hook1 from './routes/useState';
 import Hook2 from "./routes/useInput";
+import Hook3 from "./routes/useTabs";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/hook2">
           <Hook2 />
+        </Route>
+        <Route path="/hook3">
+          <Hook3 />
         </Route>
       </Switch>
     </Router>

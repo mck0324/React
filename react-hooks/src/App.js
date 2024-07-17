@@ -8,6 +8,7 @@ import './App.css';
 import Hook1 from './routes/useState';
 import Hook2 from "./routes/useInput";
 import Hook3 from "./routes/useTabs";
+import Hook4 from "./routes/useEffect";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/hook3">
           <Hook3 />
+        </Route>
+        <Route path="/hook4">
+          <Hook4 />
         </Route>
       </Switch>
     </Router>

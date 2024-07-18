@@ -28,3 +28,6 @@ useEffect(sayHello,[]);
 #ComponentWillUnMount
 두번째 인자를 [] 빈배열로 보내주면 됨
 그럼 무슨 변화가 일어났던, 누가 변화를 주던 상관없이 한번만 실행됨!
+
+#useRef
+reference는 기본적으로 우리의 컴포넌트의 어떤 부분을 선택할 수 있는 방법

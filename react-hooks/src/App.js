@@ -3,7 +3,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { useState } from 'react';
 import './App.css';
 import Hook1 from './routes/useState';
 import Hook2 from "./routes/useInput";
@@ -13,6 +12,7 @@ import Hook5 from "./routes/useEffect1";
 import Hook6 from "./routes/useEffect2";
 import Hook7 from "./routes/useEffect3";
 import Hook8 from "./routes/useEffect4";
+import Hook9 from "./routes/useEffect5";
 
 function App() {
   return (
@@ -41,6 +41,9 @@ function App() {
         </Route>
         <Route path="/hook8">
           <Hook8 />
+        </Route>
+        <Route path="/hook9">
+          <Hook9 />
         </Route>
       </Switch>
     </Router>

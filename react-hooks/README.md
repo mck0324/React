@@ -31,3 +31,7 @@ useEffect(sayHello,[]);
 
 #useRef
 reference는 기본적으로 우리의 컴포넌트의 어떤 부분을 선택할 수 있는 방법
+
+
+#usePreventLeave,useConfirm은 useEffect,useState가 아니기에 Hooks가 아님!
+ 

@@ -17,6 +17,7 @@ import Hook10 from "./routes/useEffect6";
 import Hook11 from "./routes/useEffect7";
 import Hook12 from "./routes/useEffect8";
 import Hook13 from "./routes/useEffect9";
+import Hook14 from "./routes/useEffect10";
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
         </Route> */}
         <Route path="/hook13">
           <Hook13 />
+        </Route>
+        <Route path="/hook14">
+          <Hook14 />
         </Route>
       </Switch>
     </Router>

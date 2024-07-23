@@ -35,3 +35,5 @@ reference는 기본적으로 우리의 컴포넌트의 어떤 부분을 선택�
 
 #usePreventLeave,useConfirm은 useEffect,useState가 아니기에 Hooks가 아님!
  
+#useBeforeLeave
+기본적으로 탭을 닫을때 실행되는 function => mouse가 페이지를 벗어나면 function 실행
